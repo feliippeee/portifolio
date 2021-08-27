@@ -20,10 +20,17 @@ padding: 1rem;
 
     }
     span {
-        color: white;
+        background: black;
+        color: cadetblue;
+        border-radius: 1rem;
     }
 }
-
+.power {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
 nav {
     ul {
         display: flex;
@@ -31,12 +38,16 @@ nav {
         align-self: center;
         li {
             padding-left: 1rem;
-            cursor: pointer;         
+            cursor: pointer;   
+                 
            
             a {
+                display: flex;
                 color: white;
                 font-size: 2rem;
                 padding: 1rem;
+                font-weight: 900;
+
                 &:hover {
                     background: cadetblue;
                     border-radius: 1rem

@@ -1,43 +1,45 @@
-import styles from './styles.module.scss';
+import {Projects} from './styles';
+import { BsBoxArrowUpRight } from "react-icons/bs";
+
 export default function Portifólio() {
     return (
-        <>
-            <div className={styles.container}>
+        <Projects>
+            <div className='container'>
                 <div>
                     <h1>Projetos no Ar</h1>
                 </div>
-            <div className={styles.pages}>
-                <div className={styles.section}>
+            <div className='pages'>
+                <div className='section'>
                     <img src="dev.png" alt="" />    
                     <div>Projeto em react</div>
                     <div>ir para o site</div>
                 </div>
 
-                <div className={styles.section}>
+                <div className='section'>
                 <img src="letmeask_create_room.png" alt="" />    
                     <div>Projeto em react, firebase, auth, typescript</div>
-                    <div>ir para o site</div>
+                    <div>ir para o site </div>
                 </div>
 
-                <div className={styles.section}>
+                <div className='section'>
                     <img src="dev.png" alt="" />    
                     <div>Projeto em react</div>
                     <div>ir para o site</div>
                 </div>
 
-                <div className={styles.section}>
+                <div className='section'>
                 <img src="letmeask_create_room.png" alt="" />    
                     <div>Projeto em react</div>
                     <div>ir para o site</div>
                 </div>
 
-                <div className={styles.section}>
+                <div className='section'>
                     <img src="dev.png" alt="" />    
                     <div>Projeto em react</div>
-                    <div><a href="https://ignews-phi.vercel.app/" target="_blank"> ir para o site </a></div>
+                    <div><a href="https://ignews-phi.vercel.app/" target="_blank"> ir para o site <BsBoxArrowUpRight /></a></div>
                 </div>
 
-                <div className={styles.section}>
+                <div className='section'>
                 <img src="letmeask_create_room.png" alt="" />    
                     <div>Projeto em react</div>
                     <div>ir para o site</div>
@@ -45,42 +47,42 @@ export default function Portifólio() {
             </div>              
             
         </div>
-         <div className={styles.container}>
+         <div className='container'>
             <div>
                  <h1>Outros Projetos</h1>
             </div>
-         <div className={styles.pages}>
-             <div className={styles.section}>
+         <div className='pages'>
+             <div className='section'>
                  <img src="dev.png" alt="" />    
                  <div>Projeto em react</div>
                  <div>ir para o site</div>
              </div>
 
-             <div className={styles.section}>
+             <div className='section'>
              <img src="letmeask_create_room.png" alt="" />    
                  <div>Projeto em react, firebase, auth, typescript</div>
                  <div>ir para o site</div>
              </div>
 
-             <div className={styles.section}>
+             <div className='section'>
                  <img src="dev.png" alt="" />    
                  <div>Projeto em react</div>
                  <div>ir para o site</div>
              </div>
 
-             <div className={styles.section}>
+             <div className='section'>
              <img src="letmeask_create_room.png" alt="" />    
                  <div>Projeto em react</div>
                  <div>ir para o site</div>
              </div>
 
-             <div className={styles.section}>
+             <div className='section'>
                  <img src="dev.png" alt="" />    
                  <div>Projeto em react</div>
                  <div><a href="https://ignews-phi.vercel.app/" target="_blank"> ir para o site </a></div>
              </div>
 
-             <div className={styles.section}>
+             <div className='section'>
              <img src="letmeask_create_room.png" alt="" />    
                  <div>Projeto em react</div>
                  <div>ir para o site</div>
@@ -89,6 +91,6 @@ export default function Portifólio() {
         
          
      </div>
-     </>
+     </Projects>
     ) ;
 }

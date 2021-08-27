@@ -8,11 +8,11 @@ export default function Portifólio() {
     return (
         <>  
         <Head>
-            <title>Felipe Marques</title>
-        </Head>    
-        <Header />
+            <title>Portifólio</title>
+        </Head>  
+          
         <Pages />
-        <Footer />      
+            
         </>
     ) ;
 }

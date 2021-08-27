@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
       text-decoration: none;
     }
     body {
-      background-color: #35797b;
+      background: ${props => props.theme.colors.background};
+      font-size: 14px;
+      color: ${props => props.theme.colors.text};
+
   }
 `;

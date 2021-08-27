@@ -1,11 +1,11 @@
 import { SiNextDotJs, SiTypescript, SiReact, SiNodeDotJs } from "react-icons/si";
-import styles from './styles.module.scss';
+import {Dash} from './styles';
 export function Main() {
     return (
-        <>
-        <div className={styles.dash}>   
+        <Dash>
+        <div className='dash'>   
         
-        <div className={styles.about}>
+        <div className='about'>
             
             <h2>Olá, visitante!</h2>
             <p> 
@@ -15,16 +15,16 @@ export function Main() {
             <h3>Bibliotecas que estou estudando:</h3> 
             <ul>
                 <li>
-                    <div className={styles.images}><span><SiReact /></span></div> 
+                    <div className='images'><span><SiReact /></span></div> 
                     <div>React Js</div> 
                 </li>
                     
                 <li>
-                    <div className={styles.images}><SiNextDotJs /></div>
+                    <div className='imaes'><SiNextDotJs /></div>
                     <div>Next Js</div>
                 </li>
                 <li>
-                    <div className={styles.images}><SiTypescript /></div> 
+                    <div className='images'><SiTypescript /></div> 
                     <div>Typescript</div> 
                 </li>
             </ul>
@@ -32,22 +32,22 @@ export function Main() {
             <h3>O que pretendo aprender posteriormente:</h3>
             <ul>
             <li>
-                    <div className={styles.images}><SiReact /></div> 
+                    <div className='images'><SiReact /></div> 
                     <div>React Native</div> 
                 </li>
                 <li>
-                    <div className={styles.images}><SiNodeDotJs /></div> 
+                    <div className='images'><SiNodeDotJs /></div> 
                     <div>Node Js</div> 
                 </li>
             </ul>
         </div>    
                   
-       <div className={styles.image}>
+       <div className='image'>
             <div>
                 <img src="https://github.com/feliippeee.png" alt="" />
 
             </div>
-            <div className={styles.description}>
+            <div className='description'>
                 <h2>Um pouco sobre mim!</h2>
 
                 <p>Olá, me chamo Felipe, um apaixonado por tecnologia, em busca de oportunidade na àrea de desenvolvimento web.
@@ -70,7 +70,7 @@ export function Main() {
         
 
         </div>
-        <div className={styles.about1}>
+        <div className='about1'>
         <div>
             <h2>O que estou aprendendo?</h2>
              <ul>   
@@ -91,7 +91,7 @@ export function Main() {
         </div>
      
      </div> 
-     </>
+     </Dash>
         
         
     )
