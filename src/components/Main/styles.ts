@@ -15,7 +15,7 @@ export const Dash = styled.div`
         font-size: 2rem;
         text-align: center;
         padding: 1rem;
-        background: ${props => props.theme.colors.secundary};
+        background: ${props => props.theme.colors.primary};
         border-radius: 1rem;
     }
     ul {
@@ -27,7 +27,7 @@ export const Dash = styled.div`
         li {
             display: flex;
             text-decoration: none;
-            background:${props => props.theme.colors.secundary};
+            background:${props => props.theme.colors.primary};
             padding: 1.5rem;
             text-align: center;
             border-radius: 1rem;
@@ -93,7 +93,7 @@ export const Dash = styled.div`
     justify-content: center;
     align-self: center;
     align-items: center;
-    background: ${props => props.theme.colors.secundary};
+    background: ${props => props.theme.colors.primary};
     height: 100%;
     padding: 1rem;
     border-radius: 1rem;
@@ -109,7 +109,7 @@ export const Dash = styled.div`
             margin: 2rem 8rem 2rem 8rem ;
             padding: 1rem;
             text-align: center;
-            background: ${props => props.theme.colors.secundary};
+            background: ${props => props.theme.colors.primary};
             border-radius: 1rem;
         }
         p {
