@@ -71,6 +71,7 @@ export const Dash = styled.div`
         justify-content: space-evenly;
         align-items: center;
         align-self: center;
+        
         li {
             display: flex;
             justify-content: center;
@@ -115,12 +116,68 @@ export const Dash = styled.div`
         p {
             font-size: 2rem;
             padding: 1rem 8rem 1rem 8rem;
-            
+            text-align: justify;
         }
         span {
             display: flex;
             justify-content: space-evenly;
             font-size: 1.5rem;
+        }
+    }
+}
+@media (min-width: 1080px) {
+    .about {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        ul {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .about {
+        ul {
+            grid-template-columns: 1fr;
+            li {
+                font-size: 2rem;
+            }
+        }
+    }
+    .image {
+        margin: 2rem 1rem 2rem 1rem;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        .description {
+            p {
+               padding: 2rem 1rem 2rem 1rem;
+               font-size: 3rem;
+            }
+    
+        } 
+    }
+    
+}
+@media (max-width: 426px) {
+    .image {
+        margin: 2rem 1rem 2rem 1rem;
+        .description {
+            p {
+               padding: 1rem;
+            }
+    
+        } 
+    }
+    .about1 {
+        ul {
+            grid-template-columns: 1fr 1fr;
+            li {
+                font-size: 2rem;
+            }
         }
     }
 }

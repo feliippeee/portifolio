@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiNextDotJs, SiTypescript, SiReact, SiNodeDotJs } from "react-icons/si";
 import {Dash} from './styles';
 export function Main() {
@@ -20,7 +21,7 @@ export function Main() {
                 </li>
                     
                 <li>
-                    <div className='imaes'><SiNextDotJs /></div>
+                    <div className='images'><SiNextDotJs /></div>
                     <div>Next Js</div>
                 </li>
                 <li>
@@ -44,7 +45,7 @@ export function Main() {
                   
        <div className='image'>
             <div>
-                <img src="https://github.com/feliippeee.png" alt="" />
+                <Image src="https://github.com/feliippeee.png" alt="" width="500" height="300" />
 
             </div>
             <div className='description'>
@@ -55,7 +56,7 @@ export function Main() {
                 estudei o html e o css e finalmente conheci essa linguagem incrível que é o JavaScript.
                 </p>
                 <p>
-                Atualmente sou aluno da <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a> onde faço parte da trilha de React, 
+                Atualmente sou aluno da <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">Rocketseat</a> onde faço parte da trilha de React, 
                 absorvendo muito conteúdo</p>
                 <p>
                 Sempre buscando se desenvolver para aprimorar conhecimento.

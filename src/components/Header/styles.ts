@@ -53,4 +53,11 @@ export const Content = styled.div`
         }
     }
 }
+@media (min-width: 1080px) {
+   
+}
+
+@media (max-width: 720px) {
+    
+}
 `;

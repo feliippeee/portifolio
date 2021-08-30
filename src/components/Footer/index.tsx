@@ -9,7 +9,7 @@ export function Footer() {
             <div className='footer'>                 
                 <ul>
                     <li><span>Telefone: (11) 98787-7320</span> <SiWhatsapp /></li>
-                    <li><a href="https://github.com/feliippeee" target="_blank"><SiGithub /> GitHub <BsBoxArrowUpRight /></a></li>
+                    <li><span><a href="https://github.com/feliippeee" rel="noopener noreferrer" target="_blank"><SiGithub /><span>GitHub</span>  <BsBoxArrowUpRight /></a></span></li>
                     <li><span> felipe.tecnosuporte@gmail.com</span> <SiGmail />  </li>
                 </ul>
             </div>

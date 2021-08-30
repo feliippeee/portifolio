@@ -1,12 +1,7 @@
-import React, {useContext} from "react";
-import Switch from 'react-switch';
+import React from "react";
 
-import { SiGithub, SiGmail, SiPagekit } from "react-icons/si";
 import { BsBoxArrowUpRight, BsPlug } from "react-icons/bs";
 import Link from 'next/link';
-//import styles from './styles.module.scss';
-import {ThemeContext} from 'styled-components';
-import {shade} from 'polished';
 import {Container, Content} from './styles';
 
 interface Props { 
@@ -27,15 +22,22 @@ export const Header: React.FC<Props> = ({toggleTheme}) => {
                 
                     <nav>
                     <ul>
-                        <li ><button onClick={toggleTheme}> <BsPlug /></button></li>
-                        <Link href="/">
+                        <li>
+                            <button onClick={toggleTheme}><BsPlug /></button>
+                        </li>
+                        <Link href="/" passHref>
                             <li><a>Home</a></li>
                         
                         </Link>                       
-                        <Link href="/portifolio">
+                        <Link href="/portifolio" passHref>
                             <li><a>Portifólio</a></li>                        
                         </Link>
-                        <li><a href="https://github.com/feliippeee" target="_blank">GitHub <BsBoxArrowUpRight /></a></li>
+                        
+                        <li>
+                            <a href="https://github.com/feliippeee" target="_blank" rel="noopener noreferrer">GitHub <BsBoxArrowUpRight /></a>
+                        </li>
+                        
+                       
                     </ul>
                     </nav>
                 </Content>
