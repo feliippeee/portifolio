@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-height: 100px;
+
 background: ${props => props.theme.colors.background};
-width: 100%;
-height: 150px;
 
 
 header {
 background: ${props => props.theme.colors.primary};
 width: 100%;
-height: 100px;
+height: 6.25rem;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
@@ -33,6 +31,7 @@ export const Content = styled.div`
         display: flex;
         list-style: none;
         align-self: center;
+        align-items: center;
         li {
             padding-left: 1rem;
             cursor: pointer;   

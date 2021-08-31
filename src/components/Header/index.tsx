@@ -1,15 +1,18 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import Switch from 'react-switch';
 import { BsBoxArrowUpRight, BsPlug } from "react-icons/bs";
 import Link from 'next/link';
 import {Container, Content} from './styles';
+import { shade } from "polished";
+import { ThemeContext } from "styled-components";
 
 interface Props { 
     toggleTheme(): void;
+   
 }
 
 export const Header: React.FC<Props> = ({toggleTheme}) => {
-   
+   const {colors, title} = useContext(ThemeContext);
     return (
         <Container>
             <header>
@@ -23,7 +26,15 @@ export const Header: React.FC<Props> = ({toggleTheme}) => {
                     <nav>
                     <ul>
                         <li>
-                            <button onClick={toggleTheme}><BsPlug /></button>
+                            <Switch 
+                                onChange={toggleTheme}
+                                checked={title=== 'dark'}
+                                checkedIcon={false}
+                                uncheckedIcon={false}
+                                height={10}
+                                width={40}
+                                handleDiameter={20}
+                            />
                         </li>
                         <Link href="/" passHref>
                             <li><a>Home</a></li>

@@ -46,23 +46,29 @@ export const Dash = styled.div`
     h2 {
         display: flex;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 1rem;
         background: ${props => props.theme.colors.primary};
-        margin: 0 8rem 2rem 8rem;
+        margin: 0 2rem 2rem 2rem;
         align-self: center;
         border-radius: 1rem;
         border-bottom: 1px solid white ;
 
     }
+    
     p {
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 2rem;
+        text-align: justify ;
+        margin: 0 8rem 2rem 8rem;
+    
     }
     h3 {
         display: flex;
-        justify-content: center;
-        padding: 1rem;
+        justify-content: center;               
+        padding: 2rem;
+        font-size: 2rem;
+        
+     
         
     }
     ul {
@@ -139,6 +145,11 @@ export const Dash = styled.div`
 
 @media (max-width: 720px) {
     .about {
+        h3 {            
+            background: ${props => props.theme.colors.secundary};
+            border-radius: 1rem;
+            font-weight: 400;
+        }
         ul {
             grid-template-columns: 1fr;
             li {
@@ -153,6 +164,9 @@ export const Dash = styled.div`
             height: 150px;
         }
         .description {
+            h2 {
+                font-weight: 400;
+            }
             p {
                padding: 2rem 1rem 2rem 1rem;
                font-size: 3rem;
@@ -173,12 +187,15 @@ export const Dash = styled.div`
         } 
     }
     .about1 {
-        ul {
-            grid-template-columns: 1fr 1fr;
-            li {
-                font-size: 2rem;
-            }
-        }
-    }
+      
+           display: flex;
+           ul {
+               grid-template-columns: 1fr;
+               li {
+                   font-size: 2rem;
+               }
+           }
+       }
+    
 }
 `;
