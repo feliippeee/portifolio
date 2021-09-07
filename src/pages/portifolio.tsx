@@ -1,9 +1,9 @@
 import { GetServerSideProps, GetStaticProps } from "next";
 import Image from 'next/image';
+import axios from "axios";
 import Head from "next/head";
 import React from "react";
 import { Projects } from "../components/Body/styles";
-import axios from "axios";
 type Data = {  
     id: number;  
     name: string;
