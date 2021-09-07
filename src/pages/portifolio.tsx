@@ -65,7 +65,7 @@ export default function Portifolio({repos}:DataProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async() => {
-    const res = await axios.get('/api/hello')
+    const res = await axios.get('https://portifolio1-feliippeee.vercel.app/api/hello')
     const data = await res.data
 
 //const api = Api()
