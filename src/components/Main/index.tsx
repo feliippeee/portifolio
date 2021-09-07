@@ -1,7 +1,16 @@
+import { GetStaticProps } from "next";
 import Image from "next/image";
 import { SiNextDotJs, SiTypescript, SiReact, SiNodeDotJs } from "react-icons/si";
 import {Dash} from './styles';
-export function Main() {
+type Profile = {
+    avatar_url: string;
+    location: string;
+}
+type RepositoriesProps = {
+    profile: Profile|any;
+}
+
+export function Main({profile}: RepositoriesProps) {
     return (
         <Dash>
         <div className='dash'>   
@@ -45,31 +54,26 @@ export function Main() {
                   
        <div className='image'>
             <div>
-                <Image src="https://github.com/feliippeee.png" alt="" width="500" height="300" />
-
+                <Image src={profile.avatar_url} alt="foto perfil felipe" width="500" height="300" />
             </div>
+
             <div className='description'>
                 <h2>Um pouco sobre mim!</h2>
+                <p>localização:{profile.location}</p>
 
-                <p>Olá, me chamo Felipe, um apaixonado por tecnologia, em busca de oportunidade na àrea de desenvolvimento web.
-                Comecei com a linguagem de programação PHP, logo depois fiquei procurando uma linguagem pra estudar,
-                estudei o html e o css e finalmente conheci essa linguagem incrível que é o JavaScript.
-                </p>
+                <p>Olá, me chamo Felipe, um apaixonado por tecnologia, em busca de oportunidade na àrea de desenvolvimento web.</p>
                 <p>
-                Atualmente sou aluno da <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">Rocketseat</a> onde faço parte da trilha de React, 
+                Atualmente sou aluno da <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">Rocketseat</a>, onde faço parte da trilha de React, 
                 absorvendo muito conteúdo</p>
                 <p>
-                Sempre buscando se desenvolver para aprimorar conhecimento.
+                Sempre buscando se desenvolver para aprimorar meus conhecimento.
                 fiz um projeto em react native, onde tive um primeiro contato com a biblioteca, 
                 Hoje estou totalmente focado no React Js, depois pretendo aprender o React native e o Node Js.
                 </p>
                
             </div>
         </div> 
-
-
         
-
         </div>
         <div className='about1'>
         <div>

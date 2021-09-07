@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Switch from 'react-switch';
 import { BsBoxArrowUpRight, BsPlug } from "react-icons/bs";
 import Link from 'next/link';
 import {Container, Content} from './styles';
 import { shade } from "polished";
 import { ThemeContext } from "styled-components";
+import { setCookie } from "nookies";
 
 interface Props { 
     toggleTheme(): void;
@@ -13,6 +14,7 @@ interface Props {
 
 export const Header: React.FC<Props> = ({toggleTheme}) => {
    const {colors, title} = useContext(ThemeContext);
+  
     return (
         <Container>
             <header>
@@ -45,7 +47,7 @@ export const Header: React.FC<Props> = ({toggleTheme}) => {
                         </Link>
                         
                         <li>
-                            <a href="https://github.com/feliippeee" target="_blank" rel="noopener noreferrer">GitHub <BsBoxArrowUpRight /></a>
+                            <a href="https://github.com/feliippeee" target="_blank" rel="noopener noreferrer">GitHub <span><BsBoxArrowUpRight /></span></a>
                         </li>
                         
                        

@@ -31,7 +31,7 @@ export const Projects = styled.div`
             border-radius:0 0 1rem 1rem;
             .projectName {
                 display: flex;
-                padding: 0.250rem;
+                padding: 1.25rem 0 0 0;
                 justify-content: center;
                 font-size: 1.5rem;
             }

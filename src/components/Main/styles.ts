@@ -42,7 +42,7 @@ export const Dash = styled.div`
     justify-content: center;
     align-self: center;
     padding: 1rem;
-    margin: 1rem 1rem 5rem 1rem;    
+    margin: 1rem 1rem 2rem 1rem;    
     h2 {
         display: flex;
         justify-content: center;
@@ -94,7 +94,7 @@ export const Dash = styled.div`
 }
 
 .image {
-    margin: 2rem 8rem 2rem 8rem;
+    margin: 0 8rem 2rem 8rem;
     display:flex;
     flex-direction: column;
     justify-content: center;

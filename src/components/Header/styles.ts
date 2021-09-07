@@ -14,8 +14,14 @@ align-items: center;
 justify-content: space-evenly;
 padding: 1rem;
     .container {
+        display: flex;
+        flex-direction: column;
        span {
-          
+        justify-content: center;
+        display: flex;
+        font-weight: 600;
+        background: ${props => props.theme.colors.background};
+        border-radius: 1rem;
        }
     }
 }
