@@ -47,14 +47,28 @@ export const Projects = styled.div`
                 font-size: 1rem;
                 font-weight: 400;
                 padding: 0.650rem;
+                background: ${props => props.theme.colors.secundary};
                 color: ${props => props.theme.colors.text};
-                border-radius: 1rem;
+
+            }
+            li + li {
+               margin-left: 0.25rem;
             }
         }
         .url {
             display: flex;
             justify-content: center;
             padding: 0.250rem;
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0.25rem;
+                }
+            }
         }
     }
 }

@@ -4,6 +4,8 @@ import axios from "axios";
 import Head from "next/head";
 import React from "react";
 import { Projects } from "../components/Body/styles";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import Portifólio from "../components/Body";
 type Data = {  
     id: number;  
     name: string;
@@ -23,43 +25,8 @@ export default function Portifolio({repos}:DataProps) {
         <>  
         <Head>
             <title>Portifólio</title>
-        </Head>            
-        
-        <Projects>
-            <div className='container'>
-                <div>
-                    <h1>Projetos no Ar</h1>
-                </div>
-            <div className='pages'>
-              {repos.map(repo => (
-                    <div key={repo.id} className='section'>
-                    <Image className={'img'}
-                        src={repo.image} 
-                        alt={repo.name}
-                        width="500"
-                        height="300"
-                        />    
-                     <div className="nav"> 
-                    <div className="projectName">{repo.name}</div>
-                        <ul>
-                            {repo.languages.map(repo => (
-
-                                <li key={repo}>{repo}</li>
-
-                            ))}
-                        </ul>  
-                    <div className="url"><a href={repo.url} target="_blank"  rel="noreferrer"> ir para o site </a> </div>
-                    </div>
-                </div>
-              ))}
-
-            
-            </div>              
-            
-                 
-     </div>
-     </Projects>
-        
+        </Head>     
+        <Portifólio repos={repos}/>    
         </>
     ) ;
 }

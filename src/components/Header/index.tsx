@@ -47,7 +47,7 @@ export const Header: React.FC<Props> = ({toggleTheme}) => {
                         </Link>
                         
                         <li>
-                            <a href="https://github.com/feliippeee" target="_blank" rel="noopener noreferrer">GitHub <span><BsBoxArrowUpRight /></span></a>
+                            <a href="https://github.com/feliippeee" target="_blank" rel="noopener noreferrer">GitHub <div className="svg"><BsBoxArrowUpRight /></div></a>
                         </li>
                         
                        

@@ -66,10 +66,7 @@ export const Dash = styled.div`
         display: flex;
         justify-content: center;               
         padding: 2rem;
-        font-size: 2rem;
-        
-     
-        
+        font-size: 2rem;             
     }
     ul {
         display: flex;
@@ -88,6 +85,7 @@ export const Dash = styled.div`
                 height: 40px;
                 display: flex;
                 align-items: center;
+                color: blue;
             }
         }
     }
@@ -190,7 +188,7 @@ export const Dash = styled.div`
       
            display: flex;
            ul {
-               grid-template-columns: 1fr;
+               grid-template-columns: 1fr 1fr;
                li {
                    font-size: 2rem;
                }

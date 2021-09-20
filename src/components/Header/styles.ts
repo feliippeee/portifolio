@@ -54,6 +54,10 @@ export const Content = styled.div`
                     background: ${props => props.theme.colors.secundary};
                     border-radius: 1rem
                 }
+                .svg {
+                display: flex;
+                align-items:center;
+                }
             }
         }
     }

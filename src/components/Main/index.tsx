@@ -25,7 +25,10 @@ export function Main({profile}: RepositoriesProps) {
             <h3>Bibliotecas que estou estudando:</h3> 
             <ul>
                 <li>
-                    <div className='images'><span><SiReact /></span></div> 
+                    <div className='images'>
+                        <span><SiReact /></span>
+                    </div> 
+                   
                     <div>React Js</div> 
                 </li>
                     

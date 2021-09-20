@@ -26,7 +26,11 @@ export const Footers = styled.div`
                     margin-right: 1rem;
                 }
                 a {
+                    display: flex;
                     font-size: 2rem;
+                }
+                div + div {
+                    padding-left: 0.25rem;
                 }
                
             }

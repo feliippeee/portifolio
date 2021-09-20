@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
       background: ${props => props.theme.colors.background};
-      font-size: 14px;
       color: ${props => props.theme.colors.text};
 
   }
@@ -19,8 +18,11 @@ export const GlobalStyle = createGlobalStyle`
     font: 400 1rem "Roboto", sans-serif;
 
 }
+button {
+  cursor: pointer;
+}
 
-@media (min-width: 1080px) {
+@media (max-width: 1080px) {
     html {
         font-size: 93.75%;
     }
@@ -30,7 +32,8 @@ export const GlobalStyle = createGlobalStyle`
     html {
         font-size: 87.5%;
     }
-    @media (max-width: 480px) {
+  
+@media (max-width: 480px) {
       html {
         font-size: 40%;
       }

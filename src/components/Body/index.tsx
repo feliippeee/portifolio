@@ -4,7 +4,8 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import dev from '../../../public/dev.png';
 import { GetServerSideProps, GetStaticProps } from 'next';
 
-type Data = {    
+type Data = {  
+    id: number;  
     name: string;
     image: string;
     url: string;    
@@ -26,8 +27,8 @@ export default function Portifólio({repos}:DataProps) {
                 </div>
             <div className='pages'>
               {repos.map(repo => (
-                    <div key={repo.name} className='section'>
-                    <Image className={'img'}
+                    <div key={repo.id} className='section'>
+                    <Image 
                         src={repo.image} 
                         alt={repo.name}
                         width="500"
@@ -42,7 +43,12 @@ export default function Portifólio({repos}:DataProps) {
 
                             ))}
                         </ul>  
-                    <div className="url"><a href={repo.url} target="_blank"  rel="noreferrer"> ir para o site </a> </div>
+                    <div className="url">
+                        <a href={repo.url} target="_blank"  rel="noreferrer">
+                        <div>ir para o site</div> 
+                        <div> <BsBoxArrowUpRight /></div>                             
+                        </a> 
+                    </div>
                     </div>
                 </div>
               ))}
@@ -52,6 +58,7 @@ export default function Portifólio({repos}:DataProps) {
             
                  
      </div>
+
      </Projects>
     ) ;
 }
