@@ -8,7 +8,14 @@ export function Footer() {
             
             <div className='footer'>                 
                 <ul>
-                    <li><span>Telefone: (11) 98787-7320</span> <SiWhatsapp /></li>
+                    <li>
+                    <a href="https://api.whatsapp.com/send?phone=5511987877320&text=Texto%20aqui"
+                        rel="noopener noreferrer"
+                        target="_blank">
+                              (11) 98787-7320 <SiWhatsapp />
+                    </a>
+                    </li>
+                    
                     <li>
                         <a href="https://github.com/feliippeee" rel="noopener noreferrer" target="_blank">
                             <div><SiGithub /></div>
